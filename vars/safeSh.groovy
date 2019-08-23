@@ -4,8 +4,8 @@ import java.io.File
 /**
  This a wrapper for safe script calls
 
- Basically this wrapper works by settings arguments as environment variables
- and passing those environment variables via delegate script to actual script
+ This wrapper sets arguments as environment variables
+ and passes environment variables via delegate script to actual script
  (which is stored as temporary file)
 
  Parameters:
@@ -15,6 +15,10 @@ import java.io.File
    returnStdout - return std out
    returnStatus - return status
    encoding - encoding
+
+  Example:
+    safeSh(script: 'mv "$1" "$2"',
+      args: [from, to])
 */
 def call(opts) {
   def label = opts.label ?: 'safe_script.sh'
