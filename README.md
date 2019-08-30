@@ -12,12 +12,12 @@ line arguments
 ### Parameters
 Step uses same parameters as sh step:
 
-   label - step label
-   script - script
-   args - arguments to pass to script
-   returnStdout - return std out
-   returnStatus - return status
-   encoding - encoding
+  - *label* - step label
+  - *script* - script
+  - *args* - arguments to pass to script
+  - *returnStdout* - return std out
+  - *returnStatus* - return status
+  - *encoding* - encoding
 
 ### Usage
 
